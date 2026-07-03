@@ -26,12 +26,6 @@ LLM Integration: Processes retrieved context and query to generate an AI respons
 Setup and Installation
 To run this notebook, follow these steps:
 
-Clone the repository (if on GitHub) or open the Colab notebook.
-Upload daily_sales.csv: When prompted in the 'Data Ingestion' section, upload your daily_sales.csv file.
-Install Dependencies: The notebook automatically installs required libraries like pandas, pydantic, loguru, pyspark, delta-spark, sentence-transformers, chromadb, and rank-bm25.
-LLM API Key (Optional): If you plan to integrate an external LLM (e.g., OpenAI, Gemini, Groq), you will need to set up your API key in Colab secrets. For Groq, the notebook previously used GROQ_API_KEY.
-Usage
-Execute the cells sequentially in the notebook.
 
 Data Ingestion to Delta Lake: The initial cells handle data loading, cleaning, validation, and storage to Delta Lake.
 Embedding Generation: Cells in 'Step 5' generate embeddings and populate ChromaDB.
